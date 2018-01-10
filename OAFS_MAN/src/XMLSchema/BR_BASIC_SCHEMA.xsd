@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<xs:element name="dataroot">
+  <xs:complexType>
+    <xs:sequence>
+		<xs:element name="BR_BASIC_RPT_DATA" maxOccurs="unbounded">
+		  <xs:complexType>
+			<xs:sequence>
+				<xs:element name="_xFEFF_ID" type="xs:integer"/>
+				<xs:element name="Name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Email" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="User_x0027_s_x0020_Proprietary_x0020_ID" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Primary_x0020_group" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Publication_x0020_type" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Date_x0020_of_x0020_acceptance_x0020_OR_x0020_Acceptance_x0020_Date_x0020_OR_x0020_MR_x0020_selected" type="xs:date" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="DOI" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="eISSN" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="ISBN-10_x0020_OR_x0020_ISBN" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="ISBN-13" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="ISSN" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Published_x0020_proceedings_x0020_OR_x0020_Journal" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Online_x0020_publication_x0020_date" type="xs:date" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Book_x0020_title_x0020_OR_x0020_Report_x0020_title" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Publication_x0020_date" type="xs:date" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Status_x0020_OR_x0020_Publication_x0020_Status" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Publisher_x0020_licence" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Title" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="ADMIN_x0020_ONLY_x0020_-_x0020_APC" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Do_x0020_you_x0020_want_x0020_to_x0020_apply_x0020_for_x0020_APC_x0020_funding_x003F_" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="APC_x0020_comments" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="BURA_x0020_url_x0020_OR_x0020_BURA_x0020_URL" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Corresponding_x0020_author_x0020_institution" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Data_x0020_access_x0020_statement" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="ADMIN_x0020_ONLY_x0020_-_x0020_JISC_x0020_ID" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Times_x0020_cited_x0020__x0028_Web_x0020_of_x0020_Science_x0029_" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Times_x0020_cited_x0020__x0028_Scopus_x0029_" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Times_x0020_cited_x0020__x0028_Europe_x0020_PubMed_x0020_Central_x0029_" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Indexed_x0020_in_x0020_DOAJ" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="DOAJ_x0020_CC_x0020_Licence" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Romeo_x0020_colour" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Brunel_x0020_DSpace_x0020_Repository_x0020_public_x0020_URL" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Deposited_x0020_to_x0020_Brunel_x0020_DSpace_x0020_Repository" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Item_x0020_status_x0020_in_x0020_Brunel_x0020_DSpace_x0020_Repository" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Embargo_x0020_period_x0020_requested_x0020_in_x0020_Brunel_x0020_DSpace_x0020_Repository" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="arXiv_x0020_record_x0020_exists_x003F_" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Crossref_x0020_record_x0020_exists_x003F_" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="DBLP_x0020_record_x0020_exists_x003F_" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Europe_x0020_PubMed_x0020_Central_x0020_record_x0020_exists_x003F_" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="figshare_x0020_for_x0020_Institutions_x0020_record_x0020_exists_x003F_" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="PubMed_x0020_record_x0020_exists_x003F" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="RePEc_x0020_record_x0020_exists_x003F_" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="SSRN_x0020_record_x0020_exists_x003F_" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

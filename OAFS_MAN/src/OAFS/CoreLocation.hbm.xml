@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 15-Nov-2017 12:02:56 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="OAFS.CoreLocation" table="core_location" catalog="oafs" optimistic-lock="version">
+        <id name="coreRepoId" type="int">
+            <column name="core_repo_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="300" />
+        </property>
+        <property name="latitude" type="big_decimal">
+            <column name="latitude" precision="10" scale="6" />
+        </property>
+        <property name="longitude" type="big_decimal">
+            <column name="longitude" precision="10" scale="6" />
+        </property>
+        <property name="countryCode" type="string">
+            <column name="country_code" length="5" />
+        </property>
+    </class>
+</hibernate-mapping>

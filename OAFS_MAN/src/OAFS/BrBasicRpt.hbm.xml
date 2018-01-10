@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-Oct-2017 13:20:33 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="OAFS.BrBasicRpt" table="br_basic_rpt" catalog="oafs" optimistic-lock="version">
+        <composite-id name="id" class="OAFS.BrBasicRptId">
+            <key-property name="id" type="int">
+                <column name="ID" />
+            </key-property>
+            <key-property name="userProprietaryId" type="int">
+                <column name="`User's Proprietary ID`" />
+            </key-property>
+        </composite-id>
+        <property name="name" type="string">
+            <column name="Name" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="45" />
+        </property>
+        <property name="primaryGroup" type="string">
+            <column name="`Primary group`" length="60" />
+        </property>
+        <property name="publicationType" type="string">
+            <column name="`Publication type`" length="20" />
+        </property>
+        <property name="dateOfAcceptanceOrAcceptanceDateOrMrSelected" type="date">
+            <column name="`Date of acceptance OR Acceptance Date OR MR selected`" length="10" />
+        </property>
+        <property name="doi" type="string">
+            <column name="DOI" length="50" />
+        </property>
+        <property name="eissn" type="string">
+            <column name="eISSN" length="9" />
+        </property>
+        <property name="isbn10OrIsbn" type="string">
+            <column name="`ISBN-10 OR ISBN`" length="13" />
+        </property>
+        <property name="isbn13" type="string">
+            <column name="`ISBN-13`" length="17" />
+        </property>
+        <property name="issn" type="string">
+            <column name="ISSN" length="9" />
+        </property>
+        <property name="publishedProceedingsOrJournal" type="string">
+            <column name="`Published proceedings OR Journal`" length="300" />
+        </property>
+        <property name="onlinePublicationDate" type="date">
+            <column name="`Online publication date`" length="10" />
+        </property>
+        <property name="bookTitleOrReportTitle" type="string">
+            <column name="`Book title OR Report title`" length="200" />
+        </property>
+        <property name="publicationDate" type="string">
+            <column name="`Publication date`" length="11" />
+        </property>
+        <property name="statusOrPublicationStatus" type="string">
+            <column name="`Status OR Publication Status`" length="16" />
+        </property>
+        <property name="publisherLicence" type="string">
+            <column name="`Publisher licence`" length="25" />
+        </property>
+        <property name="title" type="string">
+            <column name="Title" length="500" />
+        </property>
+        <property name="adminOnlyApc" type="string">
+            <column name="`ADMIN ONLY - APC`" length="3" />
+        </property>
+        <property name="doYouWantToApplyForApcFunding" type="string">
+            <column name="`Do you want to apply for APC funding?`" length="3" />
+        </property>
+        <property name="apcComments" type="string">
+            <column name="`APC comments`" />
+        </property>
+        <property name="buraUrlOrBuraUrl" type="string">
+            <column name="`BURA url OR BURA URL`" length="140" />
+        </property>
+        <property name="correspondingAuthorInstitution" type="string">
+            <column name="`Corresponding author institution`" length="46" />
+        </property>
+        <property name="dataAccessStatement" type="string">
+            <column name="`Data access statement`" length="35" />
+        </property>
+        <property name="adminOnlyJiscId" type="string">
+            <column name="`ADMIN ONLY - JISC ID`" length="5" />
+        </property>
+        <property name="timesCited_wos" type="java.lang.Short">
+            <column name="`Times cited (Web of Science)`" />
+        </property>
+        <property name="timesCited_sco" type="java.lang.Short">
+            <column name="`Times cited (Scopus)`" />
+        </property>
+        <property name="timesCited_empc" type="java.lang.Short">
+            <column name="`Times cited (Europe PubMed Central)`" />
+        </property>
+        <property name="indexedInDoaj" type="string">
+            <column name="`Indexed in DOAJ`" length="3" />
+        </property>
+        <property name="doajCcLicence" type="string">
+            <column name="`DOAJ CC Licence`" length="11" />
+        </property>
+        <property name="romeoColour" type="string">
+            <column name="`Romeo colour`" length="6" />
+        </property>
+        <property name="brunelDspaceRepositoryPublicUrl" type="string">
+            <column name="`Brunel DSpace Repository public URL`" length="45" />
+        </property>
+        <property name="depositedToBrunelDspaceRepository" type="string">
+            <column name="`Deposited to Brunel DSpace Repository`" length="3" />
+        </property>
+        <property name="itemStatusInBrunelDspaceRepository" type="string">
+            <column name="`Item status in Brunel DSpace Repository`" length="18" />
+        </property>
+        <property name="embargoPeriodRequestedInBrunelDspaceRepository" type="string">
+            <column name="`Embargo period requested in Brunel DSpace Repository`" length="10" />
+        </property>
+        <property name="arXivRecordExists" type="java.lang.Byte">
+            <column name="`arXiv record exists?`" />
+        </property>
+        <property name="crossrefRecordExists" type="java.lang.Byte">
+            <column name="`Crossref record exists?`" />
+        </property>
+        <property name="dblpRecordExists" type="java.lang.Byte">
+            <column name="`DBLP record exists?`" />
+        </property>
+        <property name="europePubMedCentralRecordExists" type="java.lang.Byte">
+            <column name="`Europe PubMed Central record exists?`" />
+        </property>
+        <property name="figshareForInstitutionsRecordExists" type="java.lang.Byte">
+            <column name="`figshare for Institutions record exists?`" />
+        </property>
+        <property name="pubMedRecordExists" type="java.lang.Byte">
+            <column name="`PubMed record exists?`" />
+        </property>
+        <property name="rePecRecordExists" type="java.lang.Byte">
+            <column name="`RePEc record exists?`" />
+        </property>
+        <property name="ssrnRecordExists" type="java.lang.Byte">
+            <column name="`SSRN record exists?`" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-Aug-2017 15:27:22 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="OAFS.JmInvoice" table="jm_invoice" catalog="oafs" optimistic-lock="version">
+        <id name="jmInvoiceId" type="int">
+            <column name="jm_invoice_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="65535">
+                <comment>of the invoice, e.g. invoice number</comment>
+            </column>
+        </property>
+        <property name="passedToFinance" type="string">
+            <column name="passed_to_finance" length="3">
+                <comment>yes or no</comment>
+            </column>
+        </property>
+        <property name="paymentStatus" type="string">
+            <column name="payment_status" length="3" />
+        </property>
+        <property name="paymentMethod" type="string">
+            <column name="payment_method" length="5">
+                <comment>chaps, bacs or card</comment>
+            </column>
+        </property>
+        <property name="invoiceFileName" type="string">
+            <column name="invoice_file_name" length="6">
+                <comment>number which matches the jisc monitor id</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

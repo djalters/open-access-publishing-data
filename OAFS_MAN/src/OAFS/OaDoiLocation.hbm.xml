@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-Oct-2017 14:59:01 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="OAFS.OaDoiLocation" table="oa_doi_location" catalog="oafs" optimistic-lock="version">
+        <composite-id name="id" class="OAFS.OaDoiLocationId">
+            <key-property name="doi" type="string">
+                <column name="doi" length="50" />
+            </key-property>
+            <key-property name="id" type="string">
+                <column name="id" length="100" />
+            </key-property>
+        </composite-id>
+        <property name="version" type="string">
+            <column name="version" length="45" />
+        </property>
+        <property name="evidence" type="string">
+            <column name="evidence" length="65535" />
+        </property>
+        <property name="hostType" type="string">
+            <column name="host_type" length="45" />
+        </property>
+        <property name="isBest" type="java.lang.Byte">
+            <column name="is_best" />
+        </property>
+        <property name="license" type="string">
+            <column name="license" length="150" />
+        </property>
+        <property name="updated" type="date">
+            <column name="updated" length="10" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="1000" />
+        </property>
+        <property name="urlForLandingPage" type="string">
+            <column name="url_for_landing_page" length="1000" />
+        </property>
+        <property name="urlForPdf" type="string">
+            <column name="url_for_pdf" length="1000" />
+        </property>
+        <property name="isOa" type="java.lang.Byte">
+            <column name="is_oa" />
+        </property>
+        <property name="journalIsOa" type="java.lang.Byte">
+            <column name="journal_is_oa" />
+        </property>
+        <property name="journalName" type="string">
+            <column name="journal_name" length="300" />
+        </property>
+        <property name="journalPublisher" type="string">
+            <column name="journal_publisher" length="300" />
+        </property>
+    </class>
+</hibernate-mapping>

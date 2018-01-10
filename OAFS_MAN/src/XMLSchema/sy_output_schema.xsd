@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<xs:element name="SY_outputs">
+  <xs:complexType>
+    <xs:sequence>
+		<xs:element name="SY_output" maxOccurs="unbounded">
+		  <xs:complexType>
+			<xs:sequence>
+						<xs:element name="syId" type="xs:integer"/>
+						<xs:element name="title" type="xs:string" minOccurs="0" maxOccurs="1"/>
+						<xs:element name="journal" type="xs:string" minOccurs="0" maxOccurs="1"/>
+						<xs:element name="doi" type="xs:string" minOccurs="0" maxOccurs="1"/>
+						<xs:element name="Publisher_licence" type="xs:string" minOccurs="0" maxOccurs="1"/>
+						<xs:element name="issn" type="xs:string" minOccurs="0" maxOccurs="1"/>
+						<xs:element name="fundingRequest" type="xs:string" minOccurs="0" maxOccurs="1"/>
+						<xs:element name="jmId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

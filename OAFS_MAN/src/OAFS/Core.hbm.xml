@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-Nov-2017 19:44:37 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="OAFS.Core" table="core" catalog="oafs" optimistic-lock="version">
+        <composite-id name="id" class="OAFS.CoreId">
+            <key-property name="coreId" type="int">
+                <column name="core_id" />
+            </key-property>
+            <key-property name="id" type="string">
+                <column name="ID" length="45" />
+            </key-property>
+            <key-property name="coreRepoId" type="int">
+                <column name="core_repo_id" />
+            </key-property>
+        </composite-id>
+        <property name="openDoarId" type="java.lang.Integer">
+            <column name="openDoarId" />
+        </property>
+        <property name="repoName" type="string">
+            <column name="repo_name" length="500" />
+        </property>
+        <property name="fullTextUrls" type="string">
+            <column name="full_text_urls" length="65535" />
+        </property>
+        <property name="oai" type="string">
+            <column name="oai" length="100" />
+        </property>
+        <property name="titleOrDoi" type="string">
+            <column name="title_or_doi" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
