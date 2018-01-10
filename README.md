@@ -60,12 +60,8 @@ Although data in the test file is in the public domain (as publications), organi
 
 In the results you will see data from the services populating the database.
 
-## Deployment
-
-If this concept was taken further the baseline 
-
 ## Built With
-
+* Java SE 8
 * [Hibernate ORM](http://hibernate.org/) - The peristence framework used
 
 ## License
