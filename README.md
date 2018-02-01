@@ -6,6 +6,8 @@ The primary objective is to capture data on ['open access scholarly publishing']
 
 The software provides a model for capturing and enhancing this data using available tools. A full report describing the context, development, use cases and software model is published on ['Figshare'](https://dx.doi.org/10.6084/m9.figshare.4887011).
 
+This and the resulting underpinning dataset were used in a journal submission to 'publications' (Feb 2018). This version will be archived on publication.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. The software is tested to run within the Netbeans IDE environment. We recommend you install the Netbeans IDE. You require a relational database instance running on a local/remote server (Hibernate supports these [databases](https://netbeans.org/kb/docs/ide/git.html))).
